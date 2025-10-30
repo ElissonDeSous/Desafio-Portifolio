@@ -9,7 +9,7 @@
   </head>
   <body>
     <main>
-      <header class="lg:hidden bg-[#2C2C2C] h-full">
+      <header class="lg:hidden flex justify-between bg-[#2C2C2C] h-full">
         <div>
           <img
             onclick="menu()"
@@ -19,11 +19,17 @@
           />
         </div>
 
+        <div class="flex items-center justify-center w-[300px] h-[50px]">
+          <h1 class="text-white text-2xl">Elisson Sousa</h1>
+        </div>
+
         <nav id="abrir"
-          class="bg-white hidden h-full w-[300px] fixed  absolute top-0"
+          class="bg-white hidden h-full w-[300px] flex flex-col fixed  absolute top-0"
         >
-        <div onclick="menuFechar()" class="relative left-[250px] text-4xl text-black ">
-            X
+        <div onclick="menuFechar()" class="flex justify-end  border-b-4  text-3xl ">
+            <div class="mr-3">
+              <p>X</p>
+            </div>
         </div>
           <ul class=" h-[500px] flex flex-col w-[300px] justify-around items-center">
             <li><a href="">Home</a></li>
@@ -31,6 +37,15 @@
             <li><a href="">Sobre nós</a></li>
             <li><a href="">Contato</a></li>
           </ul>
+          <div class="flex justify-center">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/elisson-sousa-dos-santos-6234b9209/ "
+              ><img
+                src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo.png"
+                width="50px"
+            /></a>
+          </div>
         </nav>
       </header>
 
@@ -75,7 +90,7 @@
 
       <section class="flex flex-wrap justify-around items-center h-[80px]">
         <form action="">
-          <input
+          <input class=""
             type="search"
             placeholder="Procurar Projeto"
             name=""
