@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./input.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header class="lg:hidden bg-[#2C2C2C] h-full">
+        <div>
+          <img
+            onclick="menu()"
+            width="50px"
+            src="https://images.icon-icons.com/1097/PNG/512/1485477024-menu_78574.png"
+            alt="menu icone"
+          />
+        </div>
+
+        <nav id="abrir"
+          class="bg-white hidden h-full w-[300px] fixed  absolute top-0"
+        >
+        <div onclick="menuFechar()" class="relative left-[250px] text-4xl text-black ">
+            X
+        </div>
+          <ul class=" h-[500px] flex flex-col w-[300px] justify-around items-center">
+            <li><a href="">Home</a></li>
+            <li><a href="">Projetos</a></li>
+            <li><a href="">Sobre nós</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <header class="bg-[#2C2C2C] justify-between hidden lg:flex h-[50px]">
+        <div class="flex items-center justify-center w-[300px] h-[50px]">
+          <h1 class="text-white text-2xl">Elisson Sousa</h1>
+        </div>
+
+        <nav class="w-[700px] flex justify-center items-center">
+          <ul class="flex justify-around w-[350px] text-white">
+            <li><a href="">Home</a></li>
+            <li><a href="">Projetos</a></li>
+            <li><a href="">Sobre nós</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/elisson-sousa-dos-santos-6234b9209/ "
+              ><img
+                src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo.png"
+                width="50px"
+            /></a>
+          </div>
+        </nav>
+      </header>
+
+      <section
+        id="banner"
+        class="text-white flex flex-col justify-center items-center"
+      >
+        <div>
+          <img
+            width="100px"
+            class="rounded-full"
+            src="https://avatars.githubusercontent.com/u/94570280?s=400&u=ce5c3785eb46a77b7923f4adbce2fe41db7e9094&v=4"
+            alt=""
+          />
+        </div>
+        <h2 class="text-4xl font-bold">Elisson Sousa</h2>
+      </section>
+
+      <section class="flex flex-wrap justify-around items-center h-[80px]">
+        <form action="">
+          <input
+            type="search"
+            placeholder="Procurar Projeto"
+            name=""
+            id="procurar"
+          />
+        </form>
+
+        <select name="" id="opcao">
+          <option value="">Featured</option>
+        </select>
+        <select name="" id="opcao">
+          <option value="">all publications</option>
+        </select>
+      </section>
+
+      <section class="flex justify-around flex-wrap">
+        <div class="flex flex-col items-center justify-beetwen" id="card">
+          <img src="./img/public1.jpg" width="400px" alt="" />
+          <h1 class="font-bold m-2 text-2xl">Loja Hardware</h1>
+          <p class="w-[350px] text-justify">
+            A Loja HardwareX nasceu da paixão por tecnologia e inovação. Fundada
+            em 2022 por um grupo de amigos fascinados por computadores e
+            eletrônicos, a HardwareX rapidamente se tornou referência na cidade
+            quando o assunto é desempenho, personalização e qualidade
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-beetwen" id="card">
+          <img src="./img/public2.jpg" width="400px" alt="" />
+          <h1 class="m-2 font-bold text-2xl">Pusada Ubatuba</h1>
+          <p class="w-[350px] text-justify">
+            A Pousada Encantos de Ubatuba é o refúgio perfeito para quem busca
+            tranquilidade, natureza e aquele clima acolhedor de litoral.
+            Localizada entre o verde da Mata Atlântica e o azul intenso do mar,
+            a pousada combina conforto e charme em um dos destinos mais
+            paradisíacos do Brasil.
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-beetwen" id="card">
+          <img src="./img/public3.jpg" width="400px" alt="" />
+          <h1 class="m-2 font-bold text-2xl">Hamburgueria</h1>
+          <p class="w-[350px] text-justify">
+            A Burger Station é o ponto de encontro perfeito para quem ama
+            hambúrguer de verdade. Inspirada nas clássicas lanchonetes
+            americanas, mas com aquele toque artesanal brasileiro, a Burger
+            Station nasceu com a missão de transformar.
+          </p>
+        </div>
+      </section>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

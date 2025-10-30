@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+#banner{
+    height: 350px;
+    background: url('./img/banner.png') center;
+}
+#procurar{
+    padding-left: 30px;
+    border: solid black 1px;
+    background-image: url('./img/pesquisa-de-lupa.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+}
+#opcao{
+    border: solid black 1px;
+    width: 300px;
+}
+#card{
+    border: solid black 1px;
+    height: 400px;
+}
